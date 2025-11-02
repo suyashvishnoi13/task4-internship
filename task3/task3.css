@@ -1,0 +1,214 @@
+/* ---------- Global Styles ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #1e293b;
+  transition: all 0.3s ease;
+}
+
+header {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* ---------- Responsive Design Section ---------- */
+.responsive-box {
+  background: #e0f2fe;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  width: 80%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Tablet View (up to 768px wide) */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+
+  main {
+    gap: 1.5rem;
+  }
+
+  .responsive-box {
+    background: #bae6fd;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .quiz-container, .carousel-container, .api-section {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .carousel img {
+    width: 90%;
+  }
+}
+
+/* Mobile View (up to 480px wide) */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .responsive-box {
+    background: #7dd3fc;
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+
+  /* Change Layout for Compact Mobile Screens */
+  main {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quiz-container, .carousel-container, .api-section {
+    width: 100%;
+  }
+
+  .carousel img {
+    width: 100%;
+    border-radius: 6px;
+  }
+}
+
+/* ---------- Quiz Section ---------- */
+.quiz-container {
+  background: #fef9c3;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quiz-container h2 {
+  text-align: center;
+}
+
+.quiz-option {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background: #fde68a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.quiz-option:hover {
+  background: #facc15;
+}
+
+/* ---------- Carousel Section ---------- */
+.carousel-container {
+  background: #e0f7fa;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 80%;
+  max-width: 650px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-btn {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-caption {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* ---------- API Section ---------- */
+.api-section {
+  background: #dcfce7;
+  padding: 2rem;
+  width: 80%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.api-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.api-btn:hover {
+  background: #16a34a;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
